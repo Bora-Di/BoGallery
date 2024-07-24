@@ -8,7 +8,8 @@
 
 body{
     min-height: 100vh;
-    background: #4f425a;
+    width: auto;
+    background: #182841;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,11 +17,11 @@ body{
 
 .topbar{
     width: 100%;
-    height: 50px;
+    height: 70px;
     display: flex;
     align-items:center;
     padding-left: 20px;
-    background: #4f425a;
+    background: #182841e1;
     position: fixed;
     top: 0;
     z-index: 10;
@@ -28,11 +29,11 @@ body{
 
 .logo{
     color: #ffff;
-    width: 300px;
+    width: 200px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 30px;
-    padding: 00.45vw;
+    padding: 0.45vw;
 }
 .tabs{
     display: flex;
@@ -45,35 +46,37 @@ body{
     min-width: 100px;
     margin: 5px;
     text-align: center;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 15px;
     padding: 6px;
     border-radius: 5px;
     cursor: pointer;
     color: white;
 }
-tab:hover{
-    background: #1e1824;
+.tab:hover{
+    background: #1e182463;
 }
 .active{
-    background: #1e1824;
+    background: #1e182470;
     color: #ffff;
 }
 .container{
     position: relative;
     column-count: 4;
     padding: 20px;
+    margin: 10% 5% 5% 5%;
 }
 .image{
     display: none;
     margin-bottom:10px;
     overflow: hidden;
+    border-radius: 50px;
 }
 .show{
     display: inline-block;
 }
 img{
-    width: 80%;
+    width: 100%;
     transition: 0.25s ease-in-out;
 }
 .image:hover img{
